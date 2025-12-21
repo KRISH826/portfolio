@@ -1,8 +1,10 @@
 
+import Welcome from "@/components/Welcome";
+
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to my portfolio</h1>
+      <Welcome />
     </div>
   );
 }
