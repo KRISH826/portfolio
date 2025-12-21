@@ -8,7 +8,7 @@ gsap.registerPlugin(useGSAP);
 
 const FONT_SIZE = {
     title: { min: 400, max: 600, default: 400 },
-    subtitle: { min: 300, max: 400, default: 300 }
+    subtitle: { min: 300, max: 500, default: 300 }
 }
 
 const renderText = (text: string, className: string | undefined, baseweight = 400) => {
@@ -83,7 +83,6 @@ const Welcome = () => {
     useGSAP(() => {
         const cleanupTitle = setUpTextHover(titleRef.current as HTMLElement, 'title');
         const cleanupSubtitle = setUpTextHover(subtitleRef.current as HTMLElement, 'subtitle');
-
         return () => {
             if (cleanupTitle) cleanupTitle();
             if (cleanupSubtitle) cleanupSubtitle();
@@ -92,7 +91,7 @@ const Welcome = () => {
     return (
         <section id='welcome'>
             <p ref={subtitleRef}>{renderText("Hey, I'm Krishnendu Welcome To My", "text-3xl font-georama", 300)}</p>
-            <h1 className='mt-5 font-georama italic tracking-widest' ref={titleRef}>{renderText("portfolio", "text-6xl font-georama ", 400)}</h1>
+            <h1 className='mt-5 font-georama italic tracking-widest' ref={titleRef}>{renderText("portfolio.", "text-6xl font-georama ", 400)}</h1>
         </section>
     )
 }
