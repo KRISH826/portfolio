@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Georama, Roboto } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const georama = Georama({
   variable: "--font-georama",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${georama.variable} ${roboto.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
