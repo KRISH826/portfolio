@@ -4,9 +4,11 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react';
+import useWindowStore from '@/store/window';
 
 const Dock = () => {
     const docRef = useRef<HTMLDivElement>(null);
+    const { window: windows, openWindow, closeWindow } = useWindowStore();
     useGSAP(() => {
         const dock = docRef.current;
         if (!dock) return;
@@ -53,7 +55,15 @@ const Dock = () => {
         }
     }, [])
     const toggleApp = (app: { id: string; canOpen: boolean }) => {
-        console.log(app);
+        if (!app.canOpen) return;
+        const isOpen = windows[app.id]?.isOpen;
+        if (isOpen) {
+            closeWindow(app.id);
+        } else {
+            openWindow(app.id);
+        }
+
+        console.log(windows);
     }
     return (
         <section id='dock'>
