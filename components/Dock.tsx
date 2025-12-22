@@ -55,6 +55,7 @@ const Dock = () => {
         }
     }, [])
     const toggleApp = (app: { id: string; canOpen: boolean }) => {
+        console.log('Clicked app ID:', app.id);  // Debug: which app was clicked
         if (!app.canOpen) return;
         const isOpen = windows[app.id]?.isOpen;
         if (isOpen) {
@@ -63,7 +64,8 @@ const Dock = () => {
             openWindow(app.id);
         }
 
-        console.log(windows);
+        // Log the ACTUAL current state from store (not stale reference)
+        console.log('After update:', useWindowStore.getState().window);
     }
     return (
         <section id='dock'>
