@@ -1,22 +1,14 @@
 "use client"
-import useWindowStore from '@/store/window';
+import WindowControls from '../WindowControls';
 import WindowWrapper from '../WindowWrapper';
 
 const Contact = () => {
-    const closeWindow = useWindowStore((state) => state.closeWindow);
     return (
         <>
             <div className="rounded-xl overflow-hidden shadow-2xl bg-white">
                 {/* Window Header */}
                 <div id="window-header">
-                    <div id="window-controls">
-                        <button
-                            onClick={() => closeWindow("contact")}
-                            className="close"
-                        />
-                        <div className="minimize" />
-                        <div className="maximize" />
-                    </div>
+                    <WindowControls windowKey="contact" />
                     <h2>Contact</h2>
                     <div className="w-14" />
                 </div>

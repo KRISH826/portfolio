@@ -2,23 +2,14 @@
 import { techStack } from "@/data/data";
 import WindowWrapper from "../WindowWrapper";
 import { Check } from "lucide-react";
-import useWindowStore from "@/store/window";
+import WindowControls from "../WindowControls";
 
 const Terminal = () => {
-    const closeWindow = useWindowStore((state) => state.closeWindow);
-
     return (
         <div className="rounded-xl overflow-hidden shadow-2xl bg-white">
             {/* Window Header */}
             <div id="window-header">
-                <div id="window-controls">
-                    <button
-                        onClick={() => closeWindow("terminal")}
-                        className="close"
-                    />
-                    <div className="minimize" />
-                    <div className="maximize" />
-                </div>
+                <WindowControls windowKey="terminal" />
                 <h2>Tech Stack</h2>
                 <div className="w-14" />
             </div>

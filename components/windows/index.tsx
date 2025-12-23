@@ -1,4 +1,5 @@
 import Terminal from "./Terminal";
 import Contact from "./Contact";
+import Resume from "./Resume";
 
-export { Terminal, Contact };
+export { Terminal, Contact, Resume };
