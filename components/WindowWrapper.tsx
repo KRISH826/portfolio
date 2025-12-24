@@ -16,6 +16,7 @@ const WindowWrapper = <P extends { data?: unknown }>(
         if (!windowState) return null;
 
         const { zIndex, isOpen, data } = windowState;
+        console.log(`WindowWrapper [${windowKey}]: isOpen=${isOpen}, zIndex=${zIndex}`);
 
         return (
             <AnimatePresence>
@@ -23,7 +24,7 @@ const WindowWrapper = <P extends { data?: unknown }>(
                     <motion.section
                         id={windowKey}
                         ref={ref}
-                        className="window absolute min-w-xl"
+                        className="window absolute"
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0, opacity: 0 }}

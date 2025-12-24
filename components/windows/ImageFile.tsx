@@ -5,7 +5,17 @@ import { LocationItem } from '@/data/data';
 import Image from 'next/image';
 
 const ImageFile = ({ data }: { data?: LocationItem | null }) => {
-    if (!data) return null;
+    if (!data) return (
+        <>
+            <div id="window-header">
+                <WindowControls windowKey="imgfile" />
+                <h2>Error</h2>
+            </div>
+            <div className='bg-red-100 p-5'>
+                <p className='text-red-500'>No data found for this file.</p>
+            </div>
+        </>
+    );
 
     const { name, imageUrl } = data;
 
