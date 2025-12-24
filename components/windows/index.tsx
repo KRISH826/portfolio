@@ -6,8 +6,9 @@ import Finder from "./Finder";
 import TextFile from "./TextFile";
 import ImageFile from "./ImageFile";
 import Gallery from "./Gallery";
+import Safari from "./Safari";
 
 // Dynamic import with SSR disabled to prevent pdf.js DOMMatrix error
 const Resume = dynamic(() => import("./Resume"), { ssr: false });
 
-export { Terminal, Contact, Resume, Finder, TextFile, ImageFile, Gallery };
+export { Terminal, Contact, Resume, Finder, TextFile, ImageFile, Gallery, Safari };
