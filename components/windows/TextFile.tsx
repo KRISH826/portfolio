@@ -2,13 +2,9 @@
 import WindowWrapper from '../WindowWrapper';
 import WindowControls from '../WindowControls';
 import { LocationItem } from '@/data/data';
-import useWindowStore from '@/store/window';
 import Image from 'next/image';
 
-const TextFile = () => {
-    const { window } = useWindowStore();
-    const data = window.txtfile.data as LocationItem | null;
-
+const TextFile = ({ data }: { data?: LocationItem | null }) => {
     if (!data) return null;
 
     const { name, description, image, subtitle } = data;

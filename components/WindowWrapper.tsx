@@ -3,7 +3,7 @@ import useWindowStore from '@/store/window';
 import React, { ComponentType, useRef } from 'react';
 import { motion, AnimatePresence } from "motion/react";
 
-const WindowWrapper = <P extends object>(
+const WindowWrapper = <P extends { data?: unknown }>(
     windowKey: string,
     Component: ComponentType<P>
 ) => {
@@ -15,7 +15,7 @@ const WindowWrapper = <P extends object>(
         // Don't render if window state is missing
         if (!windowState) return null;
 
-        const { zIndex, isOpen } = windowState;
+        const { zIndex, isOpen, data } = windowState;
 
         return (
             <AnimatePresence>
@@ -23,7 +23,7 @@ const WindowWrapper = <P extends object>(
                     <motion.section
                         id={windowKey}
                         ref={ref}
-                        className="window absolute"
+                        className="window absolute min-w-xl"
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0, opacity: 0 }}
@@ -34,7 +34,7 @@ const WindowWrapper = <P extends object>(
                         dragMomentum={false}
                         whileDrag={{ scale: 1.02 }}
                     >
-                        <Component {...props} />
+                        <Component {...props} data={data} />
                     </motion.section>
                 )}
             </AnimatePresence>
