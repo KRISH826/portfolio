@@ -13,7 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const Resume = () => {
     return (
-        <div className="h-[80vh] bg-white rounded-xl overflow-hidden flex flex-col">
+        <div className="h-[80vh] min-w-md bg-white rounded-xl overflow-hidden flex flex-col">
             <div id="window-header">
                 <WindowControls windowKey="resume" />
                 <h2>Resume</h2>
