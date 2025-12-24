@@ -1,9 +1,9 @@
-import { locations } from "@/data/data";
+import { locations, LocationItem } from "@/data/data";
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 
 // Infer the type from the locations object
-export type LocationType = typeof locations.work;
+export type LocationType = LocationItem;
 
 interface LocationStore {
     activeLocation: LocationType;

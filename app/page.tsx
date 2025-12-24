@@ -1,7 +1,7 @@
 
 import Welcome from "@/components/Welcome";
 import Dock from "@/components/Dock";
-import { Contact, Resume, Terminal } from "@/components/windows";
+import { Contact, Finder, Resume, Terminal, TextFile, ImageFile } from "@/components/windows";
 
 export default function Home() {
   return (
@@ -13,6 +13,9 @@ export default function Home() {
         <Terminal />
         <Contact />
         <Resume />
+        <Finder />
+        <TextFile />
+        <ImageFile />
       </main>
     </>
   );

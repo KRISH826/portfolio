@@ -490,7 +490,24 @@ const TRASH_LOCATION = {
     ],
 };
 
-export const locations = {
+export interface LocationItem {
+    id: number;
+    type?: string;
+    name: string;
+    icon: string;
+    kind: string;
+    children?: LocationItem[];
+    position?: string;
+    windowPosition?: string;
+    fileType?: string;
+    href?: string;
+    imageUrl?: string;
+    image?: string;
+    subtitle?: string;
+    description?: string[];
+}
+
+export const locations: Record<string, LocationItem> = {
     work: WORK_LOCATION,
     about: ABOUT_LOCATION,
     resume: RESUME_LOCATION,

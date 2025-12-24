@@ -3,22 +3,6 @@ import { navIcons, navLinks } from '@/data/data'
 import useWindowStore from '@/store/window'
 import dayjs from 'dayjs'
 import Image from 'next/image'
-import Link from 'next/link'
-
-const navList = [
-    {
-        name: 'Home',
-        href: '/'
-    },
-    {
-        name: 'Portfolio',
-        href: '/portfolio'
-    },
-    {
-        name: 'Contact',
-        href: '/contact'
-    }
-]
 
 const Navbar = () => {
     const openWindow = useWindowStore((state) => state.openWindow);
