@@ -358,7 +358,7 @@ body {
   }
 
   #txtfile {
-    @apply w-[28rem] abs-center bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-[32rem] abs-center bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
     
     h2 {
       @apply font-bold text-sm text-center w-full;
