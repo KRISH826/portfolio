@@ -28,8 +28,10 @@ const TextFile = ({ data }: { data?: LocationItem | null }) => {
                         <h2 className='text-lg text-left font-medium'>{subtitle}</h2>
                     )
                 }
-                <div className='text-left'>
-                    {description}
+                <div className='text-left space-y-2'>
+                    {description?.map((desc, index) => (
+                        <p className='text-left font-medium' key={index}>{desc}</p>
+                    ))}
                 </div>
             </div>
         </>
