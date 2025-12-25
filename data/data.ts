@@ -193,7 +193,6 @@ export {
     navLinks,
     navIcons,
     dockApps,
-    blogPosts,
     techStack,
     socials,
     photosLinks,
