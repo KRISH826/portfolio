@@ -14,7 +14,7 @@ const Navbar = () => {
                 <ul>
                     {navLinks.map(({ name, id, type }) => (
                         <li key={id}>
-                            <span className='cursor-pointe' onClick={() => openWindow(type)}>{name}</span>
+                            <span className='cursor-pointer' onClick={() => openWindow(type)}>{name}</span>
                         </li>
                     ))}
                 </ul>
