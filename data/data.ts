@@ -45,91 +45,62 @@ const navIcons = [
 const dockApps: DockApp[] = [
     {
         id: "finder",
-        name: "Portfolio", // was "Finder"
+        name: "Portfolio",
         icon: "finder.png",
         canOpen: true,
     },
     {
         id: "safari",
-        name: "Articles", // was "Safari"
+        name: "Articles",
         icon: "safari.png",
         canOpen: true,
     },
     {
         id: "photos",
-        name: "Gallery", // was "Photos"
+        name: "Gallery",
         icon: "photos.png",
         canOpen: true,
     },
     {
         id: "contact",
-        name: "Contact", // or "Get in touch"
+        name: "Contact",
         icon: "contact.png",
         canOpen: true,
     },
     {
         id: "terminal",
-        name: "Skills", // was "Terminal"
+        name: "Skills",
         icon: "terminal.png",
         canOpen: true,
     },
     {
         id: "trash",
-        name: "Archive", // was "Trash"
+        name: "Archive",
         icon: "trash.png",
         canOpen: false,
-    },
-];
-
-const blogPosts = [
-    {
-        id: 1,
-        date: "Sep 2, 2025",
-        title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-        image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-    },
-    {
-        id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-        image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-    },
-    {
-        id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
     },
 ];
 
 const techStack = [
     {
         category: "Frontend",
-        items: ["React.js", "Next.js", "TypeScript"],
-    },
-    {
-        category: "Mobile",
-        items: ["React Native", "Expo"],
+        items: ["React.js", "Next.js", "Angular", "Redux Toolkit", "HTML5", "CSS3", "JavaScript", "TypeScript"],
     },
     {
         category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
+        items: ["Tailwind CSS", "Material UI", "Bootstrap", "Sass", "SCSS", "Prime NG"],
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        items: ["Node.js", "Express"],
     },
     {
-        category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        category: "Design",
+        items: ["Figma", "Adobe Photoshop", "UI Design"],
     },
     {
-        category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        category: "Tools & Methods",
+        items: ["Git", "GitHub", "Agile", "User-Centered Design"],
     },
 ];
 
@@ -139,28 +110,35 @@ const socials = [
         text: "Github",
         icon: "/icons/github.svg",
         bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        link: "https://github.com/KRISH826",
     },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
-        link: "https://jsmastery.com/",
+        text: "LinkedIn",
+        icon: "/icons/linkedin.svg",
+        bg: "#05b6f6",
+        link: "https://www.linkedin.com/in/krishnendu-panja-40a2a4198/",
     },
     {
         id: 3,
         text: "Twitter/X",
         icon: "/icons/twitter.svg",
         bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
+        link: "https://x.com/KrishnenduKP16",
     },
     {
         id: 4,
-        text: "LinkedIn",
-        icon: "/icons/linkedin.svg",
-        bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        text: "Email",
+        icon: "/icons/email.svg",
+        bg: "#ea4335",
+        link: "mailto:krishnendupanja98@gmail.com",
+    },
+    {
+        id: 5,
+        text: "Phone",
+        icon: "/icons/call.svg",
+        bg: "#34a853",
+        link: "tel:6291697588",
     },
 ];
 
@@ -232,52 +210,42 @@ const WORK_LOCATION = {
         // ▶ Project 1
         {
             id: 5,
-            name: "Nike Ecommerce Website Application",
+            name: "ClassPoint.App",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-10 left-5", // icon position inside Finder
-            windowPosition: "top-[5vh] left-5", // optional: Finder window position
+            position: "top-10 left-5",
+            windowPosition: "top-[5vh] left-5",
             children: [
                 {
                     id: 1,
-                    name: "Nike Project.txt",
+                    name: "Project Details.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "Led UI/UX design and development for ClassPoint.app, an EdTech learning platform for educators and students.",
+                        "Designed and developed a highly engaging, animated learning interface using React, Material UI, and custom SCSS frameworks.",
+                        "Implemented dynamic, real-time interaction features, reducing new educator onboarding time by 25%.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "nike.com",
+                    name: "classpoint.app",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://classpoint.app",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "nike.png",
+                    name: "preview.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-1.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
+                    imageUrl: "/images/classpoint.png",
                 },
             ],
         },
@@ -285,7 +253,7 @@ const WORK_LOCATION = {
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "FCA.ORG.UK",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
@@ -293,52 +261,42 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "Project Details.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                        "Directed UI/UX design and frontend development for high-traffic, mission-critical sections of the Financial Conduct Authority’s public website.",
+                        "Ensured full WCAG 2.1 accessibility compliance, exceptional clarity, and alignment with stringent public sector design and technical standards.",
+                        "Engineered custom frontend framework using SCSS within Angular, streamlining development workflows and improving maintainability.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "ai-resume-analyzer.com",
+                    name: "fca.org.uk",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    href: "https://www.fca.org.uk",
                     position: "top-20 left-20",
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
+                    name: "preview.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 left-80",
-                    imageUrl: "/images/project-2.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 left-5",
-                },
+                    imageUrl: "/images/fca-project.png",
+                }
             ],
         },
 
         // ▶ Project 3
         {
             id: 7,
-            name: "Food Delivery App",
+            name: "Finreg-E.com",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-80",
@@ -346,45 +304,80 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Food Delivery App Project.txt",
+                    name: "Project Details.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "Oversaw comprehensive, platform-wide UI/UX redesign and UI development for Finreg-e.com, a leading financial regulatory compliance platform.",
+                        "Engineered sophisticated RIG module using Angular, Material UI, and SCSS, significantly improving user efficiency and complex data navigation capabilities.",
+                        "Implemented component-based architecture enabling scalable frontend development.",
+                        "Enhanced data visualization and reporting features for compliance professionals.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "food-delivery-app.com",
+                    name: "finreg-e.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "https://finreg-e.com",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "food-delivery-app.png",
+                    name: "preview.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-3.png",
+                    imageUrl: "/images/finreg-e.png",
+                }
+            ],
+        },
+        // project 4
+        {
+            id: 8,
+            name: "Studio Pod",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-10 left-80",
+            windowPosition: "top-[33vh] left-7",
+            children: [
+                {
+                    id: 1,
+                    name: "Project Details.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "A professional web application for creating corporate headshots, built with React, Material UI, SCSS, and Redux for a seamless user experience.",
+                        "Developed responsive and interactive user interfaces using React, Material UI, and SCSS, ensuring consistency across devices.",
+                        "Implemented state management with Redux to handle dynamic photo sessions and booking workflows efficiently.",
+                        "Built reusable components and design systems to maintain scalability and speed up development.",
+                        "Enhanced performance and UX through optimized rendering, dynamic previews, and smooth interactive features.",
+                    ],
                 },
                 {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
+                    id: 2,
+                    name: "studio-pod.com",
+                    icon: "/images/safari.png",
                     kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
+                    fileType: "url",
+                    href: "https://www.thestudiopod.com/",
+                    position: "top-10 right-20",
                 },
+                {
+                    id: 4,
+                    name: "preview.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-52 right-80",
+                    imageUrl: "/images/studio-pod.png",
+                }
             ],
         },
     ],
@@ -404,7 +397,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-10 left-5",
-            imageUrl: "/images/adrian.jpg",
+            imageUrl: "/images/mine.jpg",
         },
         {
             id: 2,
@@ -413,16 +406,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
-        },
-        {
-            id: 3,
-            name: "conference-me.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
+            imageUrl: "/images/mine-2.jpg",
         },
         {
             id: 4,
@@ -431,13 +415,13 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "txt",
             position: "top-60 left-5",
-            subtitle: "Meet the Developer Behind the Code",
-            image: "/images/adrian.jpg",
+            subtitle: "UI Developer & Frontend Engineer",
+            image: "/images/mine.jpg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "UI Developer and Frontend Engineer with 5+ years of experience designing high-performance, scalable interfaces using React, Angular, and Next.js.",
+                "Skilled in TypeScript and CSS frameworks such as Tailwind CSS and Material UI, with expertise in component-driven architecture and responsive design.",
+                "Proven ability to optimize user experiences, streamline development cycles, and collaborate effectively with cross-functional teams to deliver robust frontend solutions.",
+                ""
             ],
         },
     ],
@@ -456,8 +440,7 @@ const RESUME_LOCATION = {
             icon: "/images/pdf.png",
             kind: "file",
             fileType: "pdf",
-            // you can add `href` if you want to open a hosted resume
-            // href: "/your/resume/path.pdf",
+            // href: "/resume.pdf", 
         },
     ],
 };

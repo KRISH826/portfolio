@@ -19,7 +19,7 @@ const TextFile = ({ data }: { data?: LocationItem | null }) => {
                 {
                     image && (
                         <div className='flex items-center gap-2'>
-                            <Image src={image} alt={name} width={500} height={500} className='w-full h-64 object-cover rounded-md' />
+                            <Image src={image} alt={name} width={500} height={300} className='w-full h-[300px] object-cover rounded-md' />
                         </div>
                     )
                 }

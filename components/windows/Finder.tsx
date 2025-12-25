@@ -70,9 +70,16 @@ const Finder = () => {
                 <ul className='content'>
                     {
                         activeLocation.children?.map((item) => (
-                            <li key={item.id} className={item.position} onClick={() => openItem(item)}>
-                                <Image width={100} height={100} src={item.icon} alt={item.name} />
-                                <p className='text-sm font-medium truncate'>{item.name}</p>
+                            <li key={item.id} className="group" onClick={() => openItem(item)}>
+                                <div className={clsx(
+                                    "flex flex-col items-center justify-center p-2 rounded-md transition-colors duration-200 border border-transparent",
+                                    "hover:bg-blue-100 hover:border-blue-200 cursor-pointer"
+                                )}>
+                                    <Image width={64} height={64} src={item.icon} alt={item.name} className="w-16 h-16 object-contain mb-2" />
+                                    <p className='text-sm font-medium text-center text-gray-700 leading-tight w-full wrap-break-word line-clamp-2 px-1 rounded-sm'>
+                                        {item.name}
+                                    </p>
+                                </div>
                             </li>
                         ))
                     }
