@@ -34,3 +34,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+    }
+  ]
+}
+thats a easy one! 
+
+
+-- aws iam user -> attach to permission - > inline policy -> json 
+
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "S3DeployAccess",
+			"Effect": "Allow",
+			"Action": [
+				"s3:PutObject",
+				"s3:DeleteObject",
+				"s3:ListBucket"
+			],
+			"Resource": [
+				"arn:aws:s3:::YOUR_BUCKET_NAME",
+				"arn:aws:s3:::YOUR_BUCKET_NAME/*"
+			]
+		},
+		{
+			"Sid": "CloudFrontInvalidation",
+			"Effect": "Allow",
+			"Action": "cloudfront:CreateInvalidation",
+			"Resource": "*"
+		}
+	]
+}
