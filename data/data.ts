@@ -95,6 +95,14 @@ const techStack = [
         items: ["Node.js", "Express"],
     },
     {
+        category: "Database",
+        items: ["PostgreSQL", "MongoDB"],
+    },
+    {
+        category: "Aws",
+        items: ["ec2", "ecs", "cloudfront", "route 53", "S3", "Lambda", "RDS"],
+    },
+    {
         category: "Design",
         items: ["Figma", "Adobe Photoshop", "UI Design"],
     },
@@ -206,7 +214,50 @@ const WORK_LOCATION = {
     icon: "/icons/work.svg",
     kind: "folder",
     children: [
+
         // ▶ Project 1
+        {
+            id: 4,
+            name: "ChaletsDirect",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-10 left-5",
+            windowPosition: "top-[5vh] left-5",
+            children: [
+                {
+                    id: 1,
+                    name: "Project Details.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 right-10",
+                    description: [
+                        "Led end-to-end UI/UX design and frontend development for Chalets Direct (beta), delivering a modern, conversion-focused browsing experience for holiday rentals.",
+                        "Built responsive, high-performance interfaces using React, ensuring seamless navigation across complex property listings, filters, and booking flows.",
+                        "Collaborated with AI-assisted workflows (Antigravity) to accelerate development while maintaining strict control over design quality, consistency, and user experience.",
+                        "Focused on performance optimization, clean component architecture, and scalable design systems to support future growth and feature expansion.",
+                    ]
+                },
+                {
+                    id: 2,
+                    name: "chaletsdirect.com",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://beta.chaletsdirect.com/",
+                    position: "top-20 left-20",
+                },
+                {
+                    id: 3,
+                    name: "preview.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-52 left-80",
+                    imageUrl: "/images/chaletsdirect.png",
+                }
+            ],
+        },
         {
             id: 5,
             name: "ClassPoint.App",
