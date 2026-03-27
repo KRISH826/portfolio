@@ -36,7 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -50,8 +50,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   ]
 }
 thats a easy one! 
-
-
+```
+```
 -- aws iam user -> attach to permission - > inline policy -> json 
 
 {
@@ -78,3 +78,4 @@ thats a easy one!
 		}
 	]
 }
+```
