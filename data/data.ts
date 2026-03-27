@@ -217,7 +217,7 @@ const WORK_LOCATION = {
 
         // ▶ Project 1
         {
-            id: 4,
+            id: 5,
             name: "ChaletsDirect",
             icon: "/images/folder.png",
             kind: "folder",
@@ -259,7 +259,7 @@ const WORK_LOCATION = {
             ],
         },
         {
-            id: 5,
+            id: 6,
             name: "ClassPoint.App",
             icon: "/images/folder.png",
             kind: "folder",
@@ -302,7 +302,7 @@ const WORK_LOCATION = {
 
         // ▶ Project 2
         {
-            id: 6,
+            id: 7,
             name: "FCA.ORG.UK",
             icon: "/images/folder.png",
             kind: "folder",
@@ -345,7 +345,7 @@ const WORK_LOCATION = {
 
         // ▶ Project 3
         {
-            id: 7,
+            id: 8,
             name: "Finreg-E.com",
             icon: "/images/folder.png",
             kind: "folder",
@@ -388,7 +388,7 @@ const WORK_LOCATION = {
         },
         // project 4
         {
-            id: 8,
+            id: 9,
             name: "Studio Pod",
             icon: "/images/folder.png",
             kind: "folder",
