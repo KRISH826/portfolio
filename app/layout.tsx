@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Georama, Roboto } from "next/font/google";
+import { Georama, Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -12,6 +12,11 @@ const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${georama.variable} ${roboto.variable} antialiased`}
+        className={`${georama.variable} ${roboto.variable} ${inter.variable} antialiased`}
       >
         <main>
           <Navbar />

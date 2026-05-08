@@ -3,22 +3,6 @@ import { navIcons, navLinks } from '@/data/data'
 import useWindowStore from '@/store/window'
 import dayjs from 'dayjs'
 import Image from 'next/image'
-import Link from 'next/link'
-
-const navList = [
-    {
-        name: 'Home',
-        href: '/'
-    },
-    {
-        name: 'Portfolio',
-        href: '/portfolio'
-    },
-    {
-        name: 'Contact',
-        href: '/contact'
-    }
-]
 
 const Navbar = () => {
     const openWindow = useWindowStore((state) => state.openWindow);
@@ -30,7 +14,7 @@ const Navbar = () => {
                 <ul>
                     {navLinks.map(({ name, id, type }) => (
                         <li key={id}>
-                            <span className='cursor-pointe' onClick={() => openWindow(type)}>{name}</span>
+                            <span className='cursor-pointer' onClick={() => openWindow(type)}>{name}</span>
                         </li>
                     ))}
                 </ul>

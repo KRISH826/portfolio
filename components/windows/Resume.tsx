@@ -13,17 +13,17 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const Resume = () => {
     return (
-        <div className="h-[80vh] bg-white rounded-xl overflow-hidden flex flex-col">
+        <div className="h-[80vh] min-w-md bg-white rounded-xl overflow-hidden flex flex-col">
             <div id="window-header">
                 <WindowControls windowKey="resume" />
                 <h2>Resume</h2>
-                <a className="cursor-pointer" href="/files/resume.pdf" download>
+                <a className="cursor-pointer" href="/files/krishnendu.pdf" download>
                     <Download className="icon" />
                 </a>
             </div>
             <div className="bg-white overflow-x-hidden p-5 flex justify-center">
                 <div>
-                    <Document file="/files/resume.pdf" >
+                    <Document file="/files/krishnendu.pdf" >
                         <Page pageNumber={1} renderAnnotationLayer renderTextLayer width={550} />
                     </Document>
                 </div>
