@@ -21,8 +21,11 @@ export default function Home() {
         <ImageFile />
         <Gallery />
       </main>
-      <main>
-
+      <main className="lg:hidden block">
+        <div className="flex flex-col items-center justify-center h-screen">
+          <h1 className="text-lg font-bold">Mobile version coming soon</h1>
+          <p className="text-sm">You can use the desktop version for now</p>
+        </div>
       </main>
     </>
   );
