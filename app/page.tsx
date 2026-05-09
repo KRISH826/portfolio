@@ -22,7 +22,7 @@ export default function Home() {
         <Gallery />
       </main>
       <main className="lg:hidden block">
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-screen text-white bg-white/20 backdrop-blur-md">
           <h1 className="text-lg font-bold">Mobile version coming soon</h1>
           <p className="text-sm">You can use the desktop version for now</p>
         </div>
