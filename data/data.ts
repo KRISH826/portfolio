@@ -84,7 +84,7 @@ const dockApps: DockApp[] = [
 const techStack = [
     {
         category: "Frontend",
-        items: ["React.js", "Next.js", "Angular", "Redux Toolkit", "HTML5", "CSS3", "JavaScript", "TypeScript"],
+        items: ["React.js", "Next.js", "Angular", "Redux Toolkit", "HTML5", "CSS3", "JavaScript", "TypeScript", "RTK Query"],
     },
     {
         category: "Styling",
@@ -96,7 +96,7 @@ const techStack = [
     },
     {
         category: "Database",
-        items: ["PostgreSQL", "MongoDB"],
+        items: ["PostgreSQL", "MongoDB", "Redis"],
     },
     {
         category: "Aws",
@@ -110,6 +110,10 @@ const techStack = [
         category: "Tools & Methods",
         items: ["Git", "GitHub", "Agile", "User-Centered Design"],
     },
+    {
+        category: "System Design & Architecture",
+        items: ["Frontend Architecture", "DataBase Scale Up", "Backend Architecture", "Frontend Performance Optimization", "Cache System Integration"],
+    }
 ];
 
 const socials = [
