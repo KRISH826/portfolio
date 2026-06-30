@@ -248,7 +248,7 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://beta.chaletsdirect.com/",
+                    href: "https://www.chaletsdirect.com/",
                     position: "top-20 left-20",
                 },
                 {
@@ -321,7 +321,7 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "Directed UI/UX design and frontend development for high-traffic, mission-critical sections of the Financial Conduct Authority’s public website.",
+                        "Directed lead frontend development for high-traffic, mission-critical sections of the Financial Conduct Authority’s public website.",
                         "Ensured full WCAG 2.1 accessibility compliance, exceptional clarity, and alignment with stringent public sector design and technical standards.",
                         "Engineered custom frontend framework using SCSS within Angular, streamlining development workflows and improving maintainability.",
                     ],
@@ -364,7 +364,7 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Oversaw comprehensive, platform-wide UI/UX redesign and UI development for Finreg-e.com, a leading financial regulatory compliance platform.",
+                        "Oversaw comprehensive, platform-wide Lead Frontend Development and UI development for Finreg-e.com, a leading financial regulatory compliance platform.",
                         "Engineered sophisticated RIG module using Angular, Material UI, and SCSS, significantly improving user efficiency and complex data navigation capabilities.",
                         "Implemented component-based architecture enabling scalable frontend development.",
                         "Enhanced data visualization and reporting features for compliance professionals.",
