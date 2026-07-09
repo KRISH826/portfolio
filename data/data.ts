@@ -219,7 +219,6 @@ const WORK_LOCATION = {
     kind: "folder",
     children: [
 
-        // ▶ Project 1
         {
             id: 5,
             name: "ChaletsDirect",
@@ -236,10 +235,10 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "Led end-to-end UI/UX design and frontend development for Chalets Direct (beta), delivering a modern, conversion-focused browsing experience for holiday rentals.",
-                        "Built responsive, high-performance interfaces using React, ensuring seamless navigation across complex property listings, filters, and booking flows.",
-                        "Collaborated with AI-assisted workflows (Antigravity) to accelerate development while maintaining strict control over design quality, consistency, and user experience.",
-                        "Focused on performance optimization, clean component architecture, and scalable design systems to support future growth and feature expansion.",
+                        "Served as Senior Lead Frontend Engineer for Chalets Direct (beta), owning the end-to-end UI/UX design and frontend architecture for a conversion-focused holiday rental browsing experience.",
+                        "Architected and built responsive, high-performance interfaces using React, ensuring seamless navigation across complex property listings, dynamic filters, and multi-step booking flows.",
+                        "Directed AI-assisted development workflows (Antigravity) to accelerate delivery timelines while enforcing strict standards for design quality, code consistency, and overall user experience.",
+                        "Owned performance optimization, clean component architecture, and scalable design systems, laying the groundwork for future feature expansion and long-term maintainability.",
                     ]
                 },
                 {
@@ -278,9 +277,10 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Led UI/UX design and development for ClassPoint.app, an EdTech learning platform for educators and students.",
-                        "Designed and developed a highly engaging, animated learning interface using React, Material UI, and custom SCSS frameworks.",
-                        "Implemented dynamic, real-time interaction features, reducing new educator onboarding time by 25%.",
+                        "Worked as a MERN Stack Full Stack Engineer for ClassPoint.app, an EdTech learning platform, owning both frontend architecture and backend integration for educators and students.",
+                        "Designed and developed a highly engaging, animated learning interface using React, Material UI, and custom SCSS frameworks, paired with Node.js/Express APIs and MongoDB data modeling.",
+                        "Built and optimized real-time interaction features end-to-end across the MERN stack, reducing new educator onboarding time by 25%.",
+                        "Managed the full development lifecycle from database schema design to frontend state management, ensuring smooth data flow across the entire application.",
                     ],
                 },
                 {
@@ -321,9 +321,10 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "Directed lead frontend development for high-traffic, mission-critical sections of the Financial Conduct Authority’s public website.",
-                        "Ensured full WCAG 2.1 accessibility compliance, exceptional clarity, and alignment with stringent public sector design and technical standards.",
-                        "Engineered custom frontend framework using SCSS within Angular, streamlining development workflows and improving maintainability.",
+                        "Served as Lead Frontend Architect and Engineer for high-traffic, mission-critical sections of the Financial Conduct Authority's public website.",
+                        "Defined and enforced full WCAG 2.1 accessibility compliance standards, delivering exceptional clarity and strict alignment with public sector design and technical requirements.",
+                        "Architected a custom frontend framework using SCSS within Angular from the ground up, streamlining development workflows and significantly improving long-term maintainability.",
+                        "Set frontend architectural standards and best practices adopted across the wider engineering team for consistency and scalability.",
                     ],
                 },
                 {
@@ -364,10 +365,10 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Oversaw comprehensive, platform-wide Lead Frontend Development and UI development for Finreg-e.com, a leading financial regulatory compliance platform.",
-                        "Engineered sophisticated RIG module using Angular, Material UI, and SCSS, significantly improving user efficiency and complex data navigation capabilities.",
-                        "Implemented component-based architecture enabling scalable frontend development.",
-                        "Enhanced data visualization and reporting features for compliance professionals.",
+                        "Served as Lead Frontend Architect and Engineer for Finreg-e.com, a leading financial regulatory compliance platform, owning frontend architecture across the entire product suite.",
+                        "Architected the sophisticated RIG module using Angular, Material UI, and SCSS, significantly improving user efficiency and complex data navigation capabilities.",
+                        "Designed and implemented a scalable component-based architecture, establishing frontend standards adopted platform-wide for consistency and long-term maintainability.",
+                        "Led enhancements to data visualization and reporting features, improving usability for compliance professionals handling dense regulatory datasets.",
                     ],
                 },
                 {
@@ -407,11 +408,11 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "A professional web application for creating corporate headshots, built with React, Material UI, SCSS, and Redux for a seamless user experience.",
-                        "Developed responsive and interactive user interfaces using React, Material UI, and SCSS, ensuring consistency across devices.",
-                        "Implemented state management with Redux to handle dynamic photo sessions and booking workflows efficiently.",
-                        "Built reusable components and design systems to maintain scalability and speed up development.",
-                        "Enhanced performance and UX through optimized rendering, dynamic previews, and smooth interactive features.",
+                        "Worked as a MERN Stack Full Stack Engineer on Studio Pod, a professional web application for creating corporate headshots, owning both frontend and backend development.",
+                        "Built responsive and interactive user interfaces using React, Material UI, and SCSS, backed by Node.js/Express APIs and MongoDB for data persistence, ensuring consistency across devices.",
+                        "Implemented end-to-end state management with Redux to handle dynamic photo sessions and booking workflows efficiently across the full stack.",
+                        "Built reusable components, RESTful API endpoints, and design systems to maintain scalability and speed up development.",
+                        "Enhanced performance and UX through optimized rendering, dynamic previews, and smooth interactive features backed by efficient backend logic.",
                     ],
                 },
                 {
@@ -472,10 +473,10 @@ const ABOUT_LOCATION = {
             subtitle: "UI Developer & Frontend Engineer",
             image: "/images/mine.jpg",
             description: [
-                "UI Developer and Frontend Engineer with 5+ years of experience designing high-performance, scalable interfaces using React, Angular, and Next.js.",
-                "Skilled in TypeScript and CSS frameworks such as Tailwind CSS and Material UI, with expertise in component-driven architecture and responsive design.",
-                "Proven ability to optimize user experiences, streamline development cycles, and collaborate effectively with cross-functional teams to deliver robust frontend solutions.",
-                ""
+                "Senior Frontend Engineer and UI Engineer with 5+ years of experience designing high-performance, scalable interfaces using React, Angular, and Next.js.",
+                "Skilled in TypeScript and CSS frameworks such as Tailwind CSS and Material UI, with deep expertise in component-driven architecture and responsive design.",
+                "Led frontend development efforts, optimizing user experiences, streamlining development cycles, and collaborating effectively with cross-functional teams to deliver robust, production-grade solutions.",
+                "Owned features end-to-end — from architecture and implementation to code review — with a strong focus on accessibility, performance optimization, and pixel-perfect design implementation.",
             ],
         },
     ],

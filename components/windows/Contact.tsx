@@ -12,7 +12,7 @@ const Contact = () => {
                 <h2>Contact</h2>
             </div>
             {/* Window Body */}
-            <div className="bg-white p-5 space-y-4">
+            <div className="bg-white p-5 space-y-4 overflow-y-auto min-h-0 max-h-[calc(100dvh-9rem)]">
                 <h3>Let&apos;s Connect</h3>
                 <p>Got and idea? A bug to squash? Or just want to say hello?</p>
 

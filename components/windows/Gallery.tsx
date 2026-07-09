@@ -45,7 +45,7 @@ const Gallery = () => {
     }, [images, searchQuery]);
 
     return (
-        <div className="flex w-[700px] h-full flex-col bg-white">
+        <div className="flex w-[700px] max-w-[calc(100dvw-2rem)] max-h-[calc(100dvh-5rem)] flex-col bg-white">
             {/* macOS Photos Header */}
             <div id="window-header" className="relative flex items-center justify-between border-b border-gray-200/50 bg-[#f6f6f6]/95 px-4 py-2 backdrop-blur-md">
                 <div className="flex items-center gap-6">

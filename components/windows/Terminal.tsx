@@ -14,7 +14,7 @@ const Terminal = () => {
                 <div className="w-14" />
             </div>
             {/* Terminal Body */}
-            <div className="bg-white p-5 font-mono text-sm min-h-[350px]">
+            <div className="bg-white p-5 font-mono text-sm min-h-[350px] max-h-[calc(100dvh-9rem)] overflow-y-auto">
                 {/* Command Line */}
                 <p className="text-gray-700 mb-4">
                     <span className="text-[#10b981] font-semibold">krishnendu@macbook</span>
