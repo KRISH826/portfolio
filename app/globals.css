@@ -132,8 +132,13 @@ body {
     @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
   }
 
+  .window {
+    max-width: calc(100dvw - 2rem);
+    max-height: calc(100dvh - 5rem);
+  }
+
   #safari {
-    @apply w-[56rem] absolute top-40 left-1/6 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-[56rem] absolute top-40 left-1/6 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
 
     .search {
       @apply flex items-center gap-3 w-2/3 bg-white border border-gray-300 rounded-lg px-3 py-2;
@@ -177,7 +182,7 @@ body {
   }
 
   #terminal {
-    @apply w-[44rem] absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-[44rem] absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
 
     h2 {
       @apply font-bold text-sm text-center w-full;
@@ -223,7 +228,7 @@ body {
   }
 
   #contact {
-    @apply max-w-2xl absolute top-60 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply max-w-2xl absolute top-60 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
 
     h2 {
       @apply font-bold text-sm text-center w-full;
@@ -251,7 +256,7 @@ body {
   }
 
   #photos {
-    @apply max-w-3xl absolute top-96 left-1/2 -translate-y-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply max-w-3xl absolute top-96 left-1/2 -translate-y-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
 
     .sidebar {
       @apply w-3/12 flex-none bg-gray-50 border-r border-gray-200 flex flex-col p-5;
@@ -311,7 +316,7 @@ body {
   }
 
   #resume {
-    @apply w-fit h-fit absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-fit h-fit absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
 
     #window-header {
       h2 {
@@ -321,10 +326,10 @@ body {
   }
 
   #finder {
-    @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl;
+    @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl flex flex-col;
 
     .sidebar {
-      @apply w-48 bg-gray-50 border-r border-gray-200 flex flex-col p-5 space-y-3;
+      @apply w-48 bg-gray-50 border-r border-gray-200 flex flex-col p-5 space-y-3 overflow-y-auto;
 
       h3 {
         @apply text-xs font-medium text-gray-400 mb-1;
@@ -358,7 +363,7 @@ body {
   }
 
   #txtfile {
-    @apply w-[32rem] abs-center bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-[32rem] abs-center bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
     
     h2 {
       @apply font-bold text-sm text-center w-full;
@@ -366,7 +371,7 @@ body {
   }
 
   #imgfile {
-    @apply w-[36rem] abs-center bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-[36rem] abs-center bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden flex flex-col;
 
     #window-header {
       p {
@@ -380,6 +385,23 @@ body {
       img {
         @apply w-full h-fit object-contain object-center;
       }
+    }
+  }
+
+  @media (max-height: 760px) {
+    .window {
+      max-height: calc(100dvh - 2rem);
+    }
+
+    #safari,
+    #terminal,
+    #contact,
+    #finder {
+      @apply top-16;
+    }
+
+    #photos {
+      @apply top-1/2;
     }
   }
 

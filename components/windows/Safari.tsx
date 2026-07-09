@@ -26,7 +26,7 @@ const Safari = () => {
                     <Copy className='icon' />
                 </div>
             </div>
-            <div className='bg-white h-full overflow-y-auto no-scrollbar'>
+            <div className='bg-white flex-1 min-h-0 max-h-[calc(100dvh-9rem)] overflow-y-auto no-scrollbar'>
                 <div className='max-w-4xl mx-auto p-10 space-y-12'>
 
                     {/* Experience Section */}

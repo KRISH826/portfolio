@@ -48,7 +48,7 @@ const Finder = () => {
                 <WindowControls windowKey="finder" />
                 <Search className="icon" />
             </div>
-            <div className='bg-white flex h-full'>
+            <div className='bg-white flex flex-1 min-h-0 max-h-[calc(100dvh-9rem)]'>
                 <div className="sidebar">
                     <div>
                         <h3>Favourites</h3>

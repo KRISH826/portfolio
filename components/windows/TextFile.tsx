@@ -15,11 +15,11 @@ const TextFile = ({ data }: { data?: LocationItem | null }) => {
                 <WindowControls windowKey="txtfile" />
                 <h2>{name}</h2>
             </div>
-            <div className='space-y-5 bg-white p-5'>
+            <div className='space-y-5 bg-white p-5 overflow-y-auto min-h-0 max-h-[calc(100dvh-9rem)]'>
                 {
                     image && (
                         <div className='flex items-center gap-2'>
-                            <Image src={image} alt={name} width={500} height={300} className='w-full h-[300px] object-cover rounded-md' />
+                            <Image src={image} alt={name} width={500} height={300} className='w-full max-h-[36vh] object-cover rounded-md' />
                         </div>
                     )
                 }

@@ -25,14 +25,14 @@ const ImageFile = ({ data }: { data?: LocationItem | null }) => {
                 <WindowControls windowKey="imgfile" />
                 <h2>{name}</h2>
             </div>
-            <div className='bg-white p-4'>
+            <div className='bg-white p-4 overflow-y-auto min-h-0 max-h-[calc(100dvh-9rem)]'>
                 {imageUrl && (
                     <Image
                         src={imageUrl}
                         alt={name}
                         width={600}
                         height={400}
-                        className='w-full max-h-[70vh] object-contain rounded-md'
+                        className='w-full max-h-[calc(100dvh-13rem)] object-contain rounded-md'
                     />
                 )}
             </div>
