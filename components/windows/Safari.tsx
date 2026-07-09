@@ -38,11 +38,13 @@ const Safari = () => {
                             </div>
                             <h3 className='text-xl italic font-medium text-gray-700 mb-4'>UI Developer and Frontend Engineer</h3>
                             <ul className='space-y-2 text-gray-800 leading-relaxed list-disc list-outside ml-5 marker:text-gray-900'>
-                                <li>Led end-to-end UI/UX development for high-traffic web applications using Angular, React (with TypeScript), and Next.js, including UI design, from wireframing to frontend implementation.</li>
-                                <li>Architected scalable, component-driven interfaces with Tailwind CSS and Chakra UI, reducing development cycles by 15% and increasing conversion metrics by 20%.</li>
-                                <li>Conducted user research, usability testing, and A/B testing while collaborating with cross-functional teams to deliver pixel-perfect, responsive designs.</li>
-                                <li>Spearheaded migration from legacy codebase to modern React framework, reducing technical debt, improving maintainability, and streamlining debugging processes.</li>
-                                <li>Designed and refined fully responsive web interfaces with CSS3, following accessibility and performance best practices, ensuring flawless user experiences across all devices.</li>
+                                <li>Boosted user engagement by 80% by leading end-to-end UI/UX development for high-traffic web applications using Angular, React (TypeScript), and Next.js, improving usability by 90% through user research and cross-functional collaboration.</li>
+                                <li>Designed component-driven, scalable interfaces with Tailwind CSS and Chakra UI, cutting development cycles by 15% and increasing conversion metrics by 20%.</li>
+                                <li>Orchestrated migration from a legacy codebase to React 18, eliminating 30% of legacy code and boosting maintainability by 25%.</li>
+                                <li>Created WCAG 2.1-compliant, fully responsive interfaces following accessibility and performance best practices, reducing mobile bounce rates by 12%.</li>
+                                <li>Developed REST APIs with Node.js and Express, improving API response times by 20%.</li>
+                                <li>Conducted user research and usability testing, boosting collaboration efficiency by 95% while delivering pixel-perfect, responsive designs.</li>
+                                <li>Collaborated on AWS cloud deployments, achieving 90% uptime and 75% scalability improvements.</li>
                             </ul>
                         </div>
                     </div>
